@@ -51,15 +51,18 @@ const express = require("express");
 const app = express();
 require("dotenv").config();
 const port = process.env.PORT;
-const access_control = process.env.SITE_URL;
+const access_control = "https://main.d1k64wkr1l35vn.amplifyapp.com/";
 global.DEBUG = true;
 
 var cors = require("cors");
-app.use(cors({ origin: SITE_URL }));
+app.use(cors({ origin: "https://main.d1k64wkr1l35vn.amplifyapp.com/" }));
 
 app.use(express.json());
 app.use(function (req, res, next) {
-  res.setHeader("Access-Control-Allow-Origin", access_control);
+  res.setHeader(
+    "Access-Control-Allow-Origin",
+    "https://main.d1k64wkr1l35vn.amplifyapp.com/"
+  );
   res.setHeader("Access-Control-Allow-Methods", "GET,POST,PUT,DELETE,OPTIONS");
   res.setHeader(
     "Access-Control-Allow-Headers",
