@@ -1,0 +1,31 @@
+product_id,name,cost,description
+1,Health Potion,$20.00,Recovers 500HP
+2,Grand Health Potion,$40.00,Recovers 1000HP
+3,Magic Tonic,$20.00,Recovers 50MP
+4,Grand Magic Tonic,$40.00,Recovers 1000MP
+5,Holy Elixir,$150.00,Recovers all HP of all Allies
+6,Revive,$200.00,Brings a defeated ally back to life
+7,Antidote,$10.00,Heals Poison Status
+8,Paralyze Heal,$10.00,Heals Paralysis
+9,Eye Drops,$10.00,Heals Blindness
+10,Stimulant,$10.00,Heals Sleep
+11,Holy Water,$10.00,Heals Curse
+12,Smelling Salts,$10.00,Heals Confusion
+13,Echo Drops,$10.00,Heal Silence
+14,Flint,$1.00,Raw resource used in crafting
+15,Iron Ore,$15.00,Metal used in Smithing
+16,Silver Ore,$25.00,Rare Metal used in Gold Smithing
+17,Starmetal ore,$40.00,Rare metal used in smithing said to come from the stars
+19,Ocrichalcum ore,$60.00,Very Rare ore used in Smithing
+20,Gold ore,$80.00,Precious ore used in goldsmithing
+21,Linen Cloth,$7.00,basic cloth used for tailoring
+22,Sateen Cloth,$15.00,Teir II cloth used in Tailoring
+23,Silk Cloth,$20.00,Teir III cloth used in Tailoring
+24,Timber,$2.00,Wood used for crafting
+25,Amber,$200.00,Yellow Gem 
+26,Amethyst,$250.00,Purple Gem
+27,Aquamarine,$150.00,Light Blue Gem
+28,Diamond,$500.00,White Gem
+29,Ruby,$300.00,Red Gem
+30,Emerald,$250.00,Green Gem
+31,Hide,$12.00,Hide gained from skinning used in Leatherworking

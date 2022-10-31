@@ -1,0 +1,42 @@
+mission_num,job_name,job_description,payout,creation_date,deadline_date,client_id,complete
+1,Iron Ore,The Guild needs to collect 100 iron ore! We are seeking volunteers from all areas of town! Sign up if you're interested!,20,2022-06-18,2022-07-30,4,t
+2,Escort ,Escort the client though the haunted forest,1500,2022-06-18,2022-06-19,10,t
+3,Beast Slayer,The client is looking to get pesty beast removed from their farms,800,2022-06-18,2022-06-25,13,f
+4,Timber,The client is looking for 200 Timber,1200,2022-06-18,2022-06-29,7,t
+5,Hide,The client is looking for 50 Hide,750,2022-06-18,2022-06-25,9,t
+6,The Underwater Dungeon,Looking for help to clear the underwater dungeon,2700,2022-06-18,2022-06-19,7,f
+7,Star Metal,Client is looking for 100 starmetal ore,2000,2022-06-18,2022-06-29,2,t
+8,Rescue,A local villager has been capture by goblins and they are hireing a member to go save them,5000,2022-06-18,2022-06-18,13,t
+9,Mercenary Work,client is looking to pick up some extra mercs for their up coming guild wars,4500,2022-06-18,2022-06-20,14,f
+10,Castle Defence,The largest guild is looking for help to defend against invaders,6000,2022-06-18,2022-06-18,4,t
+15,Slay Naga,client is looking to get naga cleared from their lands,4500,2022-06-18,2022-07-01,13,f
+16,Mana Potions Creation,Looking for 200 MP potions,750,2022-06-18,2022-06-26,11,t
+17,The Power of the Fist,Create 25 fist weapons,1500,2022-06-18,2022-07-05,1,t
+18,Undead Night,Slay 50 undead,600,2022-06-18,2022-06-19,8,f
+19,Time to Clean,Goblin attack left the village in a mess looking for folks to help clean up,650,2022-06-18,2022-06-18,5,f
+20,Farm Escort,client is looking for a escort to the farmers market to sell their goods,1200,2022-06-18,2022-06-21,13,f
+21,More Hide,Client is looking for 100 Hide,1500,2022-06-18,2022-06-25,9,t
+22,More Star Metal,client is looking for 200 more starmetal ore,4000,2022-06-18,2022-06-29,2,f
+23,Plains of Thunder,client is requested a unquie item a thunder stone from the Plains of Thunder,7500,2022-06-18,2022-07-05,4,f
+24,Wild Primal Spirit,looking for a Summoner to come calm the spirit,4500,2022-06-18,2022-06-19,12,t
+25,Tournament of Champions,This is a invite to all warriors to test your skills in the great arena,10000,2022-06-18,2022-06-20,1,f
+26,Monster Hunting,Looking for 100 Monster Parts of any type,200,2022-06-18,2022-06-22,7,f
+27,Star Gazer Rescue,one our clients members was watching the stars and fell into a river and requires rescue from Naga,1500,2022-06-18,2022-06-19,2,f
+28,The Dark Portal,Need help to close the Dark Portal before more Tauren enter our lands,5500,2022-06-18,2022-06-18,14,f
+29,Black Temple,Demons have taken control of the black temple need help to take it back,5250,2022-06-18,2022-06-20,10,f
+30,Pest Control,fox demons are attacking our chickens need them removed,1500,2022-06-18,2022-06-18,13,t
+31,Save Us,come to river near the dark forest and help save our guild mates,7000,2022-06-18,2022-06-18,3,f
+32,The Show,Come and see the amazing power of Atheist One,100,2022-06-18,2022-06-20,6,t
+33,The Curse of the Black Mill,A curse has been cast over the mill looking for a white mage to come remove it,3000,2022-06-18,2022-06-25,10,t
+34,Protector,Looking for a Paladin to tank a dugeon for our party,2500,2022-06-18,2022-06-18,5,t
+35,To the Stars,Looking for a Astrologian to guide us to the stars,1750,2022-06-18,2022-06-20,2,t
+36,Dragons,Looking for a Dragoon to come get rid of the dragon destroying the villlage,6000,2022-06-18,2022-06-20,1,t
+37,Heist,Looking for a Theif to aquire a rare gemstone from a secure place,8000,2022-06-18,2022-07-01,14,t
+38,Trolls in the Dungeon,Trolls are in the dugeon and the client wants them removed,5500,2022-06-18,2022-06-19,11,f
+39,Save the Forest,Monster beavers have clear cut the forest looking for a Druid to restore balance,4500,2022-06-18,2022-06-19,12,t
+40,Music,Looking for a Bard to head line our music festival,9500,2022-06-18,2022-07-01,4,f
+41,The mission,Hard work,450,2022-06-28,2022-06-02,4,f
+44,Set up a shop,The guild needs a quartermaster,10,2022-07-06,2022-08-06,4,f
+43,Go to game,"It is time for the July 2022 game. This one will begin with the annual auction, so we will need to be sharp. Not only to ensure that we win something, but also to ensure that our enemies do not get too powerful.",10,2022-06-30,2022-07-03,4,t
+45,The August Game,"August 2022 is shaping up to be a very dire situation. There is a growing shadow over the area - an Imperial shadow. Unfortunately, the people in town are more focused on the impending Dollface threat. We''ll have to find a way to deal with all of them at once. Good luck.",6.5,2022-07-28,2022-07-08,4,f
+42,The next mission,Hard work,450,2022-06-28,2022-06-02,4,f
