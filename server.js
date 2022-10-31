@@ -56,11 +56,14 @@ const access_control = "https://main.d1k64wkr1l35vn.amplifyapp.com/";
 global.DEBUG = true;
 
 var cors = require("cors");
-app.use(cors({ origin: "http://localhost:3000" }));
+app.use(cors({ origin: "ec2-3-93-186-167.compute-1.amazonaws.com:3000" }));
 
 app.use(express.json());
 app.use(function (req, res, next) {
-  res.setHeader("Access-Control-Allow-Origin", "http://localhost:3000");
+  res.setHeader(
+    "Access-Control-Allow-Origin",
+    "ec2-3-93-186-167.compute-1.amazonaws.com:3000"
+  );
   res.setHeader("Access-Control-Allow-Methods", "GET,POST,PUT,DELETE,OPTIONS");
   res.setHeader(
     "Access-Control-Allow-Headers",
