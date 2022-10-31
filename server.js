@@ -88,5 +88,10 @@ app.use("/specs", specRouter);
 app.use("/search", searchEngine);
 
 app.listen(port, () => {
+  console.log(process.env.HOST);
+  console.log(process.env.USER);
+  console.log(process.env.DB_PORT);
+  console.log(process.env.PASSWORD);
+  console.log(process.env.DATABASE);
   console.log(`App running on port ${port}.`);
 });
