@@ -14,7 +14,7 @@ const getMember = async (id) => {
 
 const getMembers = async () => {
   // let memberList = await selectAgent(client);
-  let memberQuery = `SELECT member_id, first_name ||' '|| last_name full_name, me.description as desc, title, join_date, rank_name, race, image_url FROM part2."member" me
+  let memberQuery = `SELECT member_id, first_name ||' '|| last_name full_name, me.description as desc, title, join_date, rank_name, race, image_url, point_total FROM part2."member" me
   JOIN part2.rank rn USING (rank_id)
   JOIN part2.race ra USING (race_id)
   ORDER BY member_id ASC`;
