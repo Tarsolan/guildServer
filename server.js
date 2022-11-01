@@ -57,14 +57,14 @@ global.DEBUG = true;
 
 var cors = require("cors");
 app.use(
-  cors({ origin: "http://ec2-44-204-56-59.compute-1.amazonaws.com:3000/" })
+  cors({ origin: "http://ec2-44-204-56-59.compute-1.amazonaws.com:3000" })
 );
 
 app.use(express.json());
 app.use(function (req, res, next) {
   res.setHeader(
     "Access-Control-Allow-Origin",
-    "http://ec2-44-204-56-59.compute-1.amazonaws.com:3000/"
+    "http://ec2-44-204-56-59.compute-1.amazonaws.com:3000"
   );
   res.setHeader("Access-Control-Allow-Methods", "GET,POST,PUT,DELETE,OPTIONS");
   res.setHeader(
