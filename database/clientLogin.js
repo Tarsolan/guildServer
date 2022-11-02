@@ -1,7 +1,7 @@
 const db = require("./pgAdmin");
 
 const getClient = async (orgName) => {
-  let clientInfoQuery = `SELECT client_id, status, first_name ||' '|| last_name contact_name, organization, description FROM part2.client
+  let clientInfoQuery = `SELECT client_id, status, first_name, last_name, organization, description FROM part2.client
     WHERE organization = '${orgName}'`;
 
   var resClient = await db.query(clientInfoQuery);

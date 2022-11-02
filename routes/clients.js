@@ -1,7 +1,11 @@
 const express = require("express");
 const router = express.Router();
 
-const { getClients, getClientOrgNames } = require("../database/fetchDataList");
+const {
+  getClient,
+  getClients,
+  getClientOrgNames,
+} = require("../database/fetchDataList");
 const { verifyClient } = require("../database/handleLogin");
 const { editClient } = require("../database/createClient");
 
@@ -29,8 +33,14 @@ router.post("/login", async (req, res) => {
   res.status(200).send(response);
 });
 
-router.put("/edit", async (req, res) => {
-  let response = await editClient(req.body);
+router.get("/:id", async (req, res) => {
+  let response = await getClient(req.params.id);
+  DEBUG && console.log(response);
+  res.status(200).send(response);
+});
+
+router.put("/edit/:id", async (req, res) => {
+  let response = await editClient(req.body, req.params.id);
   DEBUG && console.log(response);
   res.status(200).send(response);
 });

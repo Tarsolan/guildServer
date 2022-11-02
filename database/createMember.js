@@ -23,19 +23,18 @@ const addMember = async (body) => {
     body;
   let newMember = `INSERT INTO part2.member(
     first_name, last_name, title, rank_id, race_id, description, password)
-    VALUES ('${firstName}', '${lastName}', '${title}', 1, ${raceID}, '${filterDescription}', '${password}');`;
+    VALUES ('${firstName}', '${lastName}', '${title}', 1, ${raceID}, '${filterDescription}', '${password}') RETURNING member_id;`;
 
   let res = await db.query(newMember);
 
-  return res.rows;
+  return res.rows[0];
 };
 
-const addMemberSpecs = async (body) => {
-  const { specArr, nextID } = body;
+const addMemberSpecs = async (specArr, id) => {
   specArr.map(async (spec) => {
     let specQuery = `INSERT INTO part2.member_spec(
       spec_id, member_id)
-      VALUES (${spec}, ${nextID});`;
+      VALUES (${spec}, ${id});`;
 
     let res = await db.query(specQuery);
     return res.rows;

@@ -72,6 +72,15 @@ const getClients = async () => {
   return res.rows;
 };
 
+const getClient = async (id) => {
+  let clientQuery = `SELECT client_id, first_name, last_name, organization, description FROM part2.client
+  WHERE client_id = ${id}`;
+
+  let res = await db.query(clientQuery);
+
+  return res.rows;
+};
+
 const getClientOrgNames = async () => {
   let clientQuery = `SELECT organization FROM part2.client
   ORDER BY client_id ASC;`;
@@ -129,4 +138,5 @@ module.exports = {
   getMissionsPerMember,
   getMemberMissionDetails,
   getRanks,
+  getClient,
 };

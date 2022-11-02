@@ -36,6 +36,7 @@ router.get("/:id", async (req, res) => {
   mem.completed = misCom;
   var memMisDet = await getMemberMissionDetails(mem.member_id);
   mem.missionDetails = memMisDet;
+
   res.status(200).send(mem);
 });
 
@@ -62,9 +63,9 @@ router.put("/edit", async (req, res) => {
   res.status(200).send(response);
 });
 
-router.post("/edit/specs", async (req, res) => {
+router.post("/edit/spec/:id", async (req, res) => {
   DEBUG && console.log(req.url);
-  let response = await editMemberSpec(req.body);
+  let response = await editMemberSpec(req.body, req.params.id);
   res.status(200).send(response);
 });
 
