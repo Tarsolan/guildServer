@@ -53,7 +53,7 @@ require("dotenv").config();
 const port = process.env.PORT;
 const access_control = "http://localhost:3000";
 
-global.DEBUG = true;
+global.DEBUG = false;
 
 var cors = require("cors");
 app.use(cors({ origin: "http://localhost:3000" }));
@@ -86,10 +86,5 @@ app.use("/specs", specRouter);
 app.use("/search", searchEngine);
 
 app.listen(port, () => {
-  console.log(process.env.HOST);
-  console.log(process.env.USER);
-  console.log(process.env.DB_PORT);
-  console.log(process.env.PASSWORD);
-  console.log(process.env.DATABASE);
   console.log(`App running on port ${port}.`);
 });

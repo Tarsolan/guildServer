@@ -8,7 +8,11 @@ const {
   editReport,
 } = require("../database/createMission");
 
-const { getMissions, getMissionReports } = require("../database/fetchDataList");
+const {
+  getMission,
+  getMissions,
+  getMissionReports,
+} = require("../database/fetchDataList");
 
 router.get("/", async (req, res) => {
   DEBUG && console.log(req.url);
@@ -23,6 +27,20 @@ router.get("/", async (req, res) => {
     } else {
       miss.reports = resMisRep;
     }
+  }
+
+  res.status(200).send(resMiss);
+});
+
+router.get("/:id", async (req, res) => {
+  DEBUG && console.log(req.url);
+  var resMiss = await getMission(req.params.id);
+  var resMisRep = await getMissionReports(req.params.id);
+
+  if (resMisRep === undefined) {
+    resMiss.reports = [];
+  } else {
+    resMiss.reports = resMisRep;
   }
 
   res.status(200).send(resMiss);
