@@ -11,7 +11,11 @@ const {
 
 const { verifyPassword } = require("../database/handleLogin");
 
-const { editMember, editMemberSpec } = require("../database/editMember");
+const {
+  editMember,
+  editMemberSpec,
+  editMemberPoints,
+} = require("../database/editMember");
 
 router.get("/", async (req, res) => {
   DEBUG && console.log(req.url);
@@ -59,6 +63,13 @@ router.post("/login", async (req, res) => {
 router.put("/edit", async (req, res) => {
   DEBUG && console.log("Edit request.");
   let response = await editMember(req.body);
+
+  res.status(200).send(response);
+});
+
+router.put("/edit/points/:id", async (req, res) => {
+  DEBUG && console.log("Edit request.");
+  let response = await editMemberPoints(req.body, req.params.id);
 
   res.status(200).send(response);
 });

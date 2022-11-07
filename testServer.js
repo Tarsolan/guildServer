@@ -53,7 +53,7 @@ require("dotenv").config();
 const port = process.env.PORT;
 const access_control = "http://localhost:3000";
 
-global.DEBUG = false;
+global.DEBUG = true;
 
 var cors = require("cors");
 app.use(cors({ origin: "http://localhost:3000" }));

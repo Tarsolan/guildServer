@@ -41,6 +41,20 @@ const editMemberSpec = async (specArr, member_id) => {
   return res.rows;
 };
 
+const editMemberPoints = async (body, member_id) => {
+  const { point_total } = body;
+  let sql = `UPDATE part2.member
+	SET point_total=$1
+	WHERE member_id=$2`;
+
+  try {
+    let res = await db.query(sql, [point_total, member_id]);
+    return res.rows;
+  } catch (error) {
+    console.log(error);
+  }
+};
+
 // const addMemberSpecs = async (body) => {
 //     const { specArr, nextID } = body;
 //     specArr.map(async (spec) => {
@@ -53,4 +67,4 @@ const editMemberSpec = async (specArr, member_id) => {
 //     });
 //   };
 
-module.exports = { editMember, editMemberSpec };
+module.exports = { editMember, editMemberSpec, editMemberPoints };
