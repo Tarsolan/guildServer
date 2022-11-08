@@ -56,13 +56,13 @@ const access_control = "https://main.d1k64wkr1l35vn.amplifyapp.com/";
 global.DEBUG = false;
 
 var cors = require("cors");
-app.use(cors({ origin: "https://guildsite.aridgeleyportfolio.ca/" }));
+app.use(cors({ origin: "https://guildsite.aridgeleyportfolio.ca" }));
 
 app.use(express.json());
 app.use(function (req, res, next) {
   res.setHeader(
     "Access-Control-Allow-Origin",
-    "https://guildsite.aridgeleyportfolio.ca/"
+    "https://guildsite.aridgeleyportfolio.ca"
   );
   res.setHeader("Access-Control-Allow-Methods", "GET,POST,PUT,DELETE,OPTIONS");
   res.setHeader(
