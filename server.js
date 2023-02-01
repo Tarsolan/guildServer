@@ -51,7 +51,6 @@ const express = require("express");
 const app = express();
 require("dotenv").config();
 const port = process.env.PORT;
-const access_control = "https://main.d1k64wkr1l35vn.amplifyapp.com/";
 
 global.DEBUG = false;
 
